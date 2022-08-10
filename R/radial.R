@@ -1,7 +1,5 @@
 
-# Shandiya Balasubramaniam
-# functions to create simple geometric patterns 
-# with an element of randomness
+# functions to create simple radial patterns with an element of randomness
 
 library(purrr)
 library(ggplot2)
