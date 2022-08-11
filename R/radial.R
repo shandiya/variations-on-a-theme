@@ -1,5 +1,5 @@
 
-# functions to create simple radial patterns with an element of randomness
+# simple radial patterns with an element of randomness
 
 library(purrr)
 library(ggplot2)
