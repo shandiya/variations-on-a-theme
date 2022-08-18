@@ -33,6 +33,9 @@ ggplot(radial_df) +
   theme(panel.background = element_rect(fill = "#f7e7d4" , colour = NA),
         plot.background = element_rect(fill = "#f7e7d4", colour = NA), 
         legend.position = "none")
+ggsave("images/radial_jitter.png", width = 3, height = 3, units = "in")
+
+
 
 # straight lines
 ggplot(radial_df) +
@@ -43,6 +46,7 @@ ggplot(radial_df) +
   theme(panel.background = element_rect(fill = "#f7e7d4" , colour = NA),
         plot.background = element_rect(fill = "#f7e7d4", colour = NA), 
         legend.position = "none")
+ggsave("images/radial_line.png", width = 3, height = 3, units = "in")
 
 # connects observations and shows where changes occur
 ggplot(radial_df) +
@@ -53,3 +57,4 @@ ggplot(radial_df) +
   theme(panel.background = element_rect(fill = "#f7e7d4" , colour = NA),
         plot.background = element_rect(fill = "#f7e7d4", colour = NA), 
         legend.position = "none")
+ggsave("images/radial_step.png", width = 3, height = 3, units = "in")
