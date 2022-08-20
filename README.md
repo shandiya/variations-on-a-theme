@@ -18,10 +18,14 @@ starting point for writing your own code to create more art. If you
 enjoy this and would like to let me know, or have any questions, please
 get in contact [@ShandiyaB](https://twitter.com/ShandiyaB).
 
-### Radial
+### radial
 
 <img src="images/radial_jitter.png" width="33%" /><img src="images/radial_line.png" width="33%" /><img src="images/radial_step.png" width="33%" />
 
-### Bauhaus
+### bauhaus
 
 <img src="images/bauhaus_concentric.png" width="25%" /><img src="images/bauhaus_random_arcs_02.png" width="25%" /><img src="images/bauhaus_expanding.png" width="25%" /><img src="images/bauhaus_random_arcs_01.png" width="25%" />
+
+### twirly-whirly
+
+<img src="images/tw1.png" width="33%" /><img src="images/tw2.png" width="33%" /><img src="images/tw3.png" width="33%" />

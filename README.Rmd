@@ -11,21 +11,28 @@ This repository contains code I've used to create art using R [(#rtistry)](https
 
 You are welcome to use this code to recreate the outputs, or as a starting point for writing your own code to create more art. If you enjoy this and would like to let me know, or have any questions, please get in contact [@ShandiyaB](https://twitter.com/ShandiyaB).  
 
-### Radial  
 
-```{r radial-images, echo = FALSE, message=FALSE, warning=FALSE, fig.show="hold", out.width=c('33%', '33%','33%')}
+### radial  
+
+```{r radial-img, echo = FALSE, message=FALSE, warning=FALSE, fig.show="hold", out.width=c('33%', '33%','33%')}
 knitr::include_graphics("images/radial_jitter.png")
 knitr::include_graphics("images/radial_line.png")
 knitr::include_graphics("images/radial_step.png")
 ```  
 
+### bauhaus
 
-### Bauhaus
-
-```{r rosella_img, echo = FALSE, message=FALSE, warning=FALSE, fig.show="hold", out.width=c('25%', '25%','25%', '25%')}
+```{r bauhaus_img, echo = FALSE, message=FALSE, warning=FALSE, fig.show="hold", out.width=c('25%', '25%','25%', '25%')}
 knitr::include_graphics("images/bauhaus_concentric.png")
 knitr::include_graphics("images/bauhaus_random_arcs_02.png")
 knitr::include_graphics("images/bauhaus_expanding.png")
 knitr::include_graphics("images/bauhaus_random_arcs_01.png")
 ```  
 
+### twirly-whirly
+
+```{r tw-img, echo = FALSE, message=FALSE, warning=FALSE, fig.show="hold", out.width=c('33%', '33%','33%')}
+knitr::include_graphics("images/tw1.png")
+knitr::include_graphics("images/tw2.png")
+knitr::include_graphics("images/tw3.png")
+```  
