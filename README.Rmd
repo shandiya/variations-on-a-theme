@@ -36,3 +36,11 @@ knitr::include_graphics("images/tw1.png")
 knitr::include_graphics("images/tw2.png")
 knitr::include_graphics("images/tw3.png")
 ```  
+
+### texture
+
+```{r texture_img, echo = FALSE, message=FALSE, warning=FALSE, fig.show="hold", out.width=c('50%', '50%')}
+knitr::include_graphics("images/texture01.png")
+knitr::include_graphics("images/texture02.png")
+```  
+
