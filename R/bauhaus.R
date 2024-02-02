@@ -5,7 +5,7 @@ library(ggplot2)
 library(ggforce)
 library(purrr)
 library(dplyr)
-
+library(ggpattern)
 
 # concentric circles -----
 concentric <- data.frame(x0 = rep(1, 4), 
@@ -172,18 +172,57 @@ ggplot() +
         plot.background = element_rect(fill = "#e9d8a6", colour = NA),
         legend.position = "none")
 
+# intersecting circles -------
 
+draw_half_circle <- function(start, end, v = 0) {
+  
+  theta <- seq(start, end, length.out = 100)
+  x <- sin(theta)
+  y <- cos(theta) + v
+  df <- data.frame(x = x, y = y)
+  return(df)
+  
+}
 
+top_left_half <- draw_half_circle(-pi, 0)
+top_right_half <- draw_half_circle(0, pi)
+bottom_left_half <- draw_half_circle(-pi, 0, -0.67)
+bottom_right_half <- draw_half_circle(0, pi, -0.67)
 
+fill_col <- "#ffaa00"
+alt_fill_col <- "white"
 
+ggplot() +
+  geom_polygon(data = top_left_half, 
+               aes(x, y), 
+               fill = fill_col) +
+  geom_polygon_pattern(data = bottom_left_half,
+                       aes(x, y),
+                       pattern = "stripe",
+                       fill    = alt_fill_col,
+                       colour  = NA,
+                       pattern_density = 0.5,
+                       pattern_colour = fill_col,
+                       pattern_fill = fill_col,
+                       pattern_angle = 90,
+                       pattern_spacing = 0.055) +
+  geom_polygon_pattern(data = bottom_right_half,
+                       aes(x, y),
+                       pattern = "stripe",
+                       fill    = alt_fill_col,
+                       colour  = NA,
+                       pattern_density = 0.5,
+                       pattern_colour = fill_col,
+                       pattern_fill = fill_col,
+                       pattern_angle = 90,
+                       pattern_spacing = 0.055) +
+  geom_polygon(data = top_right_half,
+               aes(x, y),
+               fill = fill_col) +
+  coord_equal() +
+  theme_void()
 
-
-
-
-
- 
-
-
+ggsave("images/bauhaus_intersecting.png", width = 3, height = 6, units = "in")
 
 
 
