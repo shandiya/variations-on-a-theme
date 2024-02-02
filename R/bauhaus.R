@@ -189,8 +189,8 @@ top_right_half <- draw_half_circle(0, pi)
 bottom_left_half <- draw_half_circle(-pi, 0, -0.67)
 bottom_right_half <- draw_half_circle(0, pi, -0.67)
 
-fill_col <- "#ffaa00"
-alt_fill_col <- "white"
+fill_col <- "#bb3e03"
+alt_fill_col <- "#e9d8a6"
 
 ggplot() +
   geom_polygon(data = top_left_half, 
@@ -220,9 +220,8 @@ ggplot() +
                aes(x, y),
                fill = fill_col) +
   coord_equal() +
-  theme_void()
+  theme_void() +
+  theme(panel.background = element_rect(fill = "#e9d8a6" , colour = NA),
+      plot.background = element_rect(fill = "#e9d8a6", colour = NA))
 
-ggsave("images/bauhaus_intersecting.png", width = 3, height = 6, units = "in")
-
-
-
+ggsave("images/bauhaus_intersecting.png", width = 3, height = 4, units = "in")
